@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Rubik:ital,wght@0,400;0,500;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 80%;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  background-color: hsl(270, 20%, 96%);
+}
+
+.box-violet{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 630px;
+  background-color: hsl(276, 55%, 52%);
+  z-index: -1;
+}
+
+.box-violet::before,
+.box-violet::after{
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  right: 0;
+  width:200px;
+  height: 150px;
+  background-color: hsl(276, 55%, 52%);
+  transform: skewY(-12deg);
+  border-bottom-right-radius: 80%;
+}
+
+.phone-box{
+  position: relative;
+  top: 30px;
+  left: 80px;
+  width: 300px;
+  min-height: 200px;
+  background-color: #fff;
+  border-radius: 40px;
+  border: 10px solid #fff;
+  box-shadow: 10px 20px 20px 2px #D0D0D0;
+}
+
+.phone-box-heading{
+  /*width: 350px;*/
+  display: flex;
+  background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  padding: 30px;
+  position: relative;
+  border-top-left-radius: 40px;
+  border-top-right-radius:40px;
+}
+
+.angle-left{
+  position: absolute;
+  left: 12px;
+  top: 45px;
+}
+
+.angle-left i{
+  font-size: 15px;
+  color: white;
+}
+
+.white{
+  width: 150px;
+  height: 30px;
+  top: -10px;
+  left: 65px;
+  background-color: white;
+  border-radius: 40px;
+  border: 0;
+  position: absolute;
+}
+
+.samuel-img{
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+img{
+  display: inline-block;
+}
+
+.img-desc{
+margin-left: 15px;
+color: hsl(0, 0%, 100%);
+}
+
+.ellipsis-icon{
+  margin-left: 50px;
+}
+.ellipsis-icon i{
+  color: white;
+}
+
+.chat-content{
+  font-size: 12px;
+  /*width: 350px;*/
+  background-color: hsl(270, 20%, 96%);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.chat-gray{
+  background-color: #E8E8E8;
+  width: 200px;
+  padding: 8px;
+  border-radius: 20px 20px 20px 0px;
+  color: hsl(271, 36%, 24%);
+}
+
+.dog-pictures{
+  position: relative;
+  left: 70px;
+}
+
+.dog-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.chat-white{
+  color: hsl(271, 15%, 43%);
+  background-color: #fff;
+  width: 200px;
+  padding: 8px;
+  border-radius: 20px 20px 0px 20px;
+  position: relative;
+  left: 50px;
+}
+
+.minute-radius{
+  width: 30px;
+  height: 30px;
+  background-color: hsl(293, 100%, 63%);
+  border-radius: 50%;
+  border: 2px solid hsl(289, 100%, 72%);
+}
+
+.chat-purple-gradient{
+  width: 250px;
+  display: flex;
+  color: #fff;
+  background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+.minute{
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.minute-bill{
+  margin-top: 5px;
+  margin-left: 60px;
+}
+
+.minute-bill1{
+  margin-top: 5px;
+  margin-left: 90px;
+}
+
+.message-box{
+  position: relative;
+}
+
+input[type="text"]{
+  border: 0;
+  border-radius: 45px;
+  padding: 10px;
+  width: 95%;
+  margin-left: 10px;
+  z-index: -1;
+}
+
+i{
+  color: #fff;
+  font-size: 20px;
+}
+
+.angle-right{
+  position: absolute;
+  bottom: 0;
+  right: 3px;
+  bottom: 4px;
+  margin-right: 10px;
+  z-index: 1;
+}
+
+.angle-right-background{
+  width: 35px;
+  height: 35px;
+  background-color: hsl(271, 36%, 24%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 15px;
+  border-radius: 50%;
+}
+
+.booking-content{
+  padding: 50px;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.booking-heading{
+  margin-top: 30px;
+  font-size: 40px;
+  color: hsl(271, 36%, 24%);
+}
+
+.booking-para{
+  padding: 25px;
+  line-height: 2em;
+  color: #C8C8C8;
+}
+
+@media(min-width: 1280px){
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 16px;
+    background-color: #f8f8f8;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+  }
+
+  .white{
+    top: -10px;
+    left: 85px;
+    position: absolute;
+  }
+
+  .img-desc{
+  margin-left: 20px;
+  }
+
+  .samuel-img{
+    margin-left: 25px;
+  }
+
+  .angle-left{
+    position: absolute;
+    left: 45px;
+    top: 40px;
+  }
+
+  .ellipsis-icon{
+    margin-left: 60px;
+  }
+  .box-violet{
+    position: absolute;
+    z-index: 1;
+    width: 430px;
+    height: 800px;
+  }
+
+  .box-violet::before,
+  .box-violet::after{
+    content: "";
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    right: 0;
+    width:400px;
+    height: 250px;
+    background-color:hsl(276, 55%, 52%);
+    transform: skewY(-10deg);
+    border-radius: 0 0 13em 13em;
+  }
+
+  .phone-box{
+    z-index: 1;
+    position: relative;
+    left: 200px;
+    top: 150px;
+    width: 400px;
+    min-height: 200px;
+  }
+
+  .dog-img{
+    width: 60px;
+    height: 60px;
+}
+
+  .dog-pictures{
+    position: relative;
+    left: 95px;
+  }
+
+  .chat-white{
+    position: relative;
+    left: 100px;
+  }
+
+  .booking-content{
+    width: 55%;
+    text-align: left;
+    position: relative;
+    top: 350px;
+    left: 80px;
+  }
+
+  .booking-heading{
+    margin-left: 20px;
+  }
+}
+
+@media(max-width: 436px) {
+  .booking-content{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  .booking-para{
+    width: 350px;
+  }
+}
+
+@media(max-width: 378px) {
+  .booking-content{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-left: 30px;
+    margin-top: 70px;
+  }
+
+  .booking-para{
+    width: 320px;
+  }
+
+  .phone-box{
+    left: 50px;
+  }
+}
+
+
+@media(max-width: 353px){
+  .phone-box{
+    left: 30px;
+  }
+}
